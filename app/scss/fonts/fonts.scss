@@ -1,0 +1,7 @@
+// Подключение шрифтов
+// Флаг &display=swap необходим для коректного отображения шрифтов
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,regular,500,600,700,800&display=swap');
+
+// Шрифт по умолчанию
+$defaultFonts: 'Montserrat', sans-serif;
+$defaultFonrWeight: '400px';

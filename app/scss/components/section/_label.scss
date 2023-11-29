@@ -1,0 +1,97 @@
+._label {
+    &-list {
+        &__card {
+            margin: 20px 0;
+            width: 100%;
+            padding: 11px 7.5px 18px 22.49px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            position: relative;
+            border-radius: 10px;
+            background: #FFF;
+        }
+
+        &__tags {
+            span {
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 13px;
+        }
+
+        &__title {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        &__category {
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 500;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-right: 21px;
+            padding-bottom: 8px;
+            padding-top: 4px;
+            padding-left: 6px;
+
+            border-radius: 0px 10px;
+            background: #5B7499;
+            min-width: 10px;
+        }
+
+        &__text {
+            margin-top: 22px;
+            font-size: 16px;
+            font-weight: 500;
+            overflow: hidden;
+            max-height: 100px;
+        }
+
+        &__next {
+            font-size: 16px;
+            margin-top: 29px;
+            font-weight: 600;
+        }
+        &__smail{
+            display: flex;
+            margin-top: 11px;
+            align-items: center;
+            li{
+                display: flex;
+                align-items: center;
+                &:not(:last-child){
+                    margin-right: 15px;
+                }
+                span{
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        &__category._green{
+            background-color: #5B996C;
+        }
+    }
+
+    &-btn {
+        border-radius: 10px;
+        border: 2px solid #D9D9D9;
+        background: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 27px;
+        height: 42px;
+    }
+}

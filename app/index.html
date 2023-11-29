@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCoder - Gulp шаблон</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <!-- <div class="preloader">
+        <div class="preloader__elem">
+        </div>
+    </div> -->
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__container">
+                <button class="header__burger"><span></span></button>
+                <a href="./index.html" class="header__logo">Logo</a>
+        
+                <div class="header__inner">
+                    <div class="header__search">
+                        <label class="header__search-icon">
+                            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.8965 13.8977L21.1187 17.3125M16.2053 3.68784C19.5476 6.35496 19.5476 10.6792 16.2053 13.3463C12.863 16.0134 7.44399 16.0134 4.10171 13.3463C0.759392 10.6792 0.759392 6.35493 4.10171 3.68784C7.44402 1.02072 12.863 1.02072 16.2053 3.68784Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </label>
+                        <input type="text" name="search" id="search" placeholder="Поиск">
+                    </div>
+        
+                    <button class="_label-btn">+ Добавить</button>
+                </div>
+                <!-- /.header__inner -->
+            </div>
+        </div>
+        <div class="general">
+            <aside class="nav">
+                <nav class="nav__menu">
+                    <ul class="nav__menu-list">
+                        <li><img src="./images/menu/like.webp" alt="Главная"><a href="#">Главная</a></li>
+                        <li><img src="./images/menu/rocket.webp" alt="Популярное"><a href="#">Популярное</a></li>
+                    </ul>
+                    <div class="nav__menu-inner">
+                        <div class="nav__menu-title">Темы</div>
+                        <ul class="nav__menu-list">
+                            <li><img src="./images/menu/sport.webp" alt="Спорт"><a href="#">Спорт</a></li>
+                            <li><img src="./images/menu/funny.webp" alt="Смешное"><a href="#">Смешное</a></li>
+                            <li><img src="./images/menu/adult.webp" alt="Взрослое"><a href="#">Взрослое</a></li>
+                        </ul>
+                    </div>
+                    <ul class="nav__menu-list">
+                        <li><img src="./images/menu/about-the-project.webp" alt="О проекте"><a href="#">О проекте</a></li>
+                        <li><img src="./images/menu/sos.webp" alt="Помощь"><a href="#">Помощь</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="main main-index">
+                <div class="main__wrapper">
+                    <section class="news news-index">
+                        <ul class="_label-list">
+                            <li class="_label-list__card">
+                                <div class="_label-list__tags">
+                                    <span>#Тег</span><span>#Тег2 </span><span>#Тег3</span>
+                                </div>
+                                <div class="_label-list__category">Категория 1</div>
+                                <div class="_label-list__header">
+                                    <h1 class="_label-list__title">Заголовок</h1>
+                                    <div class="_label-list__comment">
+                                        <svg width="41" height="24" viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.67871 6.5C9.67871 4.84315 11.0219 3.5 12.6787 3.5H28.3375C29.9944 3.5 31.3375 4.84315 31.3375 6.5V18.8027C31.3375 19.5647 30.5194 20.0467 29.8529 19.6774L20.9928 14.7685C20.6913 14.6015 20.325 14.6015 20.0235 14.7685L11.1633 19.6774C10.4968 20.0467 9.67871 19.5647 9.67871 18.8027V6.5Z"
+                                                stroke="#333333" stroke-width="1.5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="_label-list__text">
+                                    Текст текст текст текст Текст текст текст текст Текст текст текст текст Текст текст текст текст Текст
+                                    текст текст текст Текст текст текст текст Текст текст текст текст Текст текст
+                                </p>
+                                <div class="_label-list__next">
+                                    Прочитать дальше
+                                </div>
+                                <ul class="_label-list__smail">
+                                    <li><img src="./images/smail/laughter.webp" alt="laughter"><span>123</span></li>
+                                    <li><img src="./images/smail/agressive.webp" alt="agressive"><span>123</span></li>
+                                    <li><img src="./images/smail/crying.webp" alt="crying"><span>123</span></li>
+                                    <li><img src="./images/smail/like.webp" alt="like"><span>123</span></li>
+                                </ul>
+                            </li>
+                            <li class="_label-list__card">
+                                <div class="_label-list__tags">
+                                    <span>#Тег</span><span>#Тег2 </span><span>#Тег3</span>
+                                </div>
+                                <div class="_label-list__category _green">Категория 1</div>
+                                <div class="_label-list__header">
+                                    <h1 class="_label-list__title">Проверка поста</h1>
+                                    <div class="_label-list__comment">
+                                        <svg width="41" height="24" viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.67871 6.5C9.67871 4.84315 11.0219 3.5 12.6787 3.5H28.3375C29.9944 3.5 31.3375 4.84315 31.3375 6.5V18.8027C31.3375 19.5647 30.5194 20.0467 29.8529 19.6774L20.9928 14.7685C20.6913 14.6015 20.325 14.6015 20.0235 14.7685L11.1633 19.6774C10.4968 20.0467 9.67871 19.5647 9.67871 18.8027V6.5Z"
+                                                stroke="#333333" stroke-width="1.5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="_label-list__text">
+                                    Текст текст текст текст Текст текст текст текст Текст текст текст текст Текст текст текст текст Текст
+                                    текст текст текст Текст текст текст текст Текст текст текст текст Текст текст
+                                </p>
+                                <div class="_label-list__next">
+                                    Прочитать дальше
+                                </div>
+                                <ul class="_label-list__smail">
+                                    <li><img src="./images/smail/laughter.webp" alt="laughter"><span>123</span></li>
+                                    <li><img src="./images/smail/agressive.webp" alt="agressive"><span>123</span></li>
+                                    <li><img src="./images/smail/crying.webp" alt="crying"><span>123</span></li>
+                                    <li><img src="./images/smail/like.webp" alt="like"><span>123</span></li>
+                                </ul>
+                            </li>
+                            <li class="_label-list__card">
+                                <div class="_label-list__tags">
+                                    <span>#Тег</span><span>#Тег2 </span><span>#Тег3</span>
+                                </div>
+                                <div class="_label-list__category _green">Категория 1</div>
+                                <div class="_label-list__header">
+                                    <h1 class="_label-list__title">Проверка поста</h1>
+                                    <div class="_label-list__comment">
+                                        <svg width="41" height="24" viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.67871 6.5C9.67871 4.84315 11.0219 3.5 12.6787 3.5H28.3375C29.9944 3.5 31.3375 4.84315 31.3375 6.5V18.8027C31.3375 19.5647 30.5194 20.0467 29.8529 19.6774L20.9928 14.7685C20.6913 14.6015 20.325 14.6015 20.0235 14.7685L11.1633 19.6774C10.4968 20.0467 9.67871 19.5647 9.67871 18.8027V6.5Z"
+                                                stroke="#333333" stroke-width="1.5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="_label-list__text">
+                                    Текст текст текст текст Текст текст текст текст Текст текст текст текст Текст текст текст текст Текст
+                                    текст текст текст Текст текст текст текст Текст текст текст текст Текст текст
+                                </p>
+                                <div class="_label-list__next">
+                                    Прочитать дальше
+                                </div>
+                                <ul class="_label-list__smail">
+                                    <li><img src="./images/smail/laughter.webp" alt="laughter"><span>123</span></li>
+                                    <li><img src="./images/smail/agressive.webp" alt="agressive"><span>123</span></li>
+                                    <li><img src="./images/smail/crying.webp" alt="crying"><span>123</span></li>
+                                    <li><img src="./images/smail/like.webp" alt="like"><span>123</span></li>
+                                </ul>
+                            </li>
+                            <li class="_label-list__card">
+                                <div class="_label-list__tags">
+                                    <span>#Тег</span><span>#Тег2 </span><span>#Тег3</span>
+                                </div>
+                                <div class="_label-list__category _green">Категория 1</div>
+                                <div class="_label-list__header">
+                                    <h1 class="_label-list__title">Проверка поста</h1>
+                                    <div class="_label-list__comment">
+                                        <svg width="41" height="24" viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.67871 6.5C9.67871 4.84315 11.0219 3.5 12.6787 3.5H28.3375C29.9944 3.5 31.3375 4.84315 31.3375 6.5V18.8027C31.3375 19.5647 30.5194 20.0467 29.8529 19.6774L20.9928 14.7685C20.6913 14.6015 20.325 14.6015 20.0235 14.7685L11.1633 19.6774C10.4968 20.0467 9.67871 19.5647 9.67871 18.8027V6.5Z"
+                                                stroke="#333333" stroke-width="1.5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="_label-list__text">
+                                    Текст текст текст текст Текст текст текст текст Текст текст текст текст Текст текст текст текст Текст
+                                    текст текст текст Текст текст текст текст Текст текст текст текст Текст текст
+                                </p>
+                                <div class="_label-list__next">
+                                    Прочитать дальше
+                                </div>
+                                <ul class="_label-list__smail">
+                                    <li><img src="./images/smail/laughter.webp" alt="laughter"><span>123</span></li>
+                                    <li><img src="./images/smail/agressive.webp" alt="agressive"><span>123</span></li>
+                                    <li><img src="./images/smail/crying.webp" alt="crying"><span>123</span></li>
+                                    <li><img src="./images/smail/like.webp" alt="like"><span>123</span></li>
+                                </ul>
+                            </li>
+                            <li class="_label-list__card">
+                                <div class="_label-list__tags">
+                                    <span>#Тег</span><span>#Тег2 </span><span>#Тег3</span>
+                                </div>
+                                <div class="_label-list__category _green">Категория 1</div>
+                                <div class="_label-list__header">
+                                    <h1 class="_label-list__title">Проверка поста</h1>
+                                    <div class="_label-list__comment">
+                                        <svg width="41" height="24" viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.67871 6.5C9.67871 4.84315 11.0219 3.5 12.6787 3.5H28.3375C29.9944 3.5 31.3375 4.84315 31.3375 6.5V18.8027C31.3375 19.5647 30.5194 20.0467 29.8529 19.6774L20.9928 14.7685C20.6913 14.6015 20.325 14.6015 20.0235 14.7685L11.1633 19.6774C10.4968 20.0467 9.67871 19.5647 9.67871 18.8027V6.5Z"
+                                                stroke="#333333" stroke-width="1.5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="_label-list__text">
+                                    Текст текст текст текст Текст текст текст текст Текст текст текст текст Текст текст текст текст Текст
+                                    текст текст текст Текст текст текст текст Текст текст текст текст Текст текст
+                                </p>
+                                <div class="_label-list__next">
+                                    Прочитать дальше
+                                </div>
+                                <ul class="_label-list__smail">
+                                    <li><img src="./images/smail/laughter.webp" alt="laughter"><span>123</span></li>
+                                    <li><img src="./images/smail/agressive.webp" alt="agressive"><span>123</span></li>
+                                    <li><img src="./images/smail/crying.webp" alt="crying"><span>123</span></li>
+                                    <li><img src="./images/smail/like.webp" alt="like"><span>123</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="advertisement">
+                    <div class="advertisement__item _img">
+                        <img src="./images/advertisement.webp" alt="">
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- <script src="./js/wow.min.js"></script> -->
+    <script src="./js/main.min.js"></script>
+</body>
+
+</html>

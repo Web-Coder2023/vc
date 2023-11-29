@@ -1,0 +1,20 @@
+.general{
+    display: flex;
+}
+
+@import './fonts/fonts.scss';
+@import './constants/vars.scss';
+@import './libs/global.scss';
+@import './libs/animate.scss';
+@import './constants/base.scss';
+
+@import './components/general/header.scss';
+
+/* Index page */
+@import './components/section/index/main-index.scss';
+@import './components/section/index/asside-nav.scss';
+@import './components/section/index/news.scss';
+@import './components/section/index/news-index.scss';
+@import './components/section/_label.scss';
+
+@import './components/general/footer.scss';
