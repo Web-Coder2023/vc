@@ -12,4 +12,5 @@
 /* Для Firefox */
 .news {
     scrollbar-width: none; /* Скрыть полосу прокрутки в Firefox */
+    transition: all 0.2s ease-in-out;
 }

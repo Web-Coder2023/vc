@@ -82,6 +82,12 @@
         &__category._green{
             background-color: #5B996C;
         }
+
+        &__advertisement{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &-btn {

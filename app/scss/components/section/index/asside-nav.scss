@@ -1,8 +1,9 @@
 .nav {
-    max-width: 250px;
+    width: 250px;
     padding-left: 23px;
     padding-top: 20px;
     position: absolute;
+    z-index: 100;
     height: -webkit-fill-available;
 
     &__menu {

@@ -1,22 +1,36 @@
 <div class="header">
     <div class="header__container">
-        <button class="header__burger"><span></span></button>
-        <a href="./index.html" class="header__logo">Logo</a>
+        <div class="header__box">
+            <button class="header__burger"><span></span></button>
+            <a href="./index.html" class="header__logo _img">
+                <img src="../images/Logo.webp" alt="Logo">
+            </a>
+        </div>
 
-        <div class="header__inner">
+        <div class="header__wrapper">
             <div class="header__search">
-                <label class="header__search-icon">
-                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="header__search-icon">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
-                            d="M16.8965 13.8977L21.1187 17.3125M16.2053 3.68784C19.5476 6.35496 19.5476 10.6792 16.2053 13.3463C12.863 16.0134 7.44399 16.0134 4.10171 13.3463C0.759392 10.6792 0.759392 6.35493 4.10171 3.68784C7.44402 1.02072 12.863 1.02072 16.2053 3.68784Z"
+                            d="M16.9332 16.8977L20.3122 20.3125M16.38 6.68784C19.0548 9.35496 19.0548 13.6792 16.38 16.3463C13.7052 19.0134 9.36841 19.0134 6.69362 16.3463C4.0188 13.6792 4.0188 9.35493 6.69362 6.68784C9.36843 4.02072 13.7052 4.02072 16.38 6.68784Z"
                             stroke="#8B8B8B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                </label>
-                <input type="text" name="search" id="search" placeholder="Поиск">
+                </div>
+                <div class="header__search-inner">
+                    <div class="header__search-box">
+                        <label for="search" class="header__search-box_icon">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9332 16.8977L20.3122 20.3125M16.38 6.68784C19.0548 9.35496 19.0548 13.6792 16.38 16.3463C13.7052 19.0134 9.36841 19.0134 6.69362 16.3463C4.0188 13.6792 4.0188 9.35493 6.69362 6.68784C9.36843 4.02072 13.7052 4.02072 16.38 6.68784Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </label>
+                        <input id="search" placeholder="Поиск" type="text">
+                    </div>
+                </div>
             </div>
-
-            <button class="_label-btn">+ Добавить</button>
+            <button class="_label-btn">+ <span>Добавить</span></button>
         </div>
-        <!-- /.header__inner -->
+
     </div>
 </div>

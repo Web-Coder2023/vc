@@ -4,3 +4,8 @@
     top: 80px;
     overflow: hidden;
 }
+@media (max-width: 1550px) {
+    .advertisement {
+        display: none;
+    }
+}
