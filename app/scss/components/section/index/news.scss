@@ -1,6 +1,7 @@
 .news {
     overflow-y: scroll; /* Добавить вертикальную полосу прокрутки */
     height: calc(100vh - 60px);
+    width: 100%;
 }
 
 /* Для WebKit (Chrome, Safari) */
