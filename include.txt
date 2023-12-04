@@ -5,5 +5,7 @@
         <!--=include section/index/sport.html -->
         <!--=include section/index/laughter.html -->
         <!--=include section/index/adult.html -->
+        <!--=include section/index/about-the-project.html -->
+         <!--=include section/index/support.html -->
     </div>
 </main>

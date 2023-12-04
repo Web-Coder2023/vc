@@ -92,7 +92,7 @@ function building() {
         'app/iconfont/**/*.*',
         'app/js/**/*.min.js',
     ], {base : 'app'})
-        .pipe(dest('dist'))
+        .pipe(dest('vc'))
 }
 
 

@@ -5,7 +5,6 @@
 @import './fonts/fonts.scss';
 @import './constants/vars.scss';
 @import './libs/global.scss';
-@import './libs/animate.scss';
 @import './constants/base.scss';
 
 @import './components/general/header.scss';
@@ -16,5 +15,7 @@
 @import './components/section/index/news.scss';
 @import './components/section/_label.scss';
 @import './components/section/_label-theme.scss';
+@import './components/section/index/about.scss';
+@import './components/section/index/support.scss';
 
 @import './components/general/footer.scss';
