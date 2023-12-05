@@ -3,4 +3,5 @@ document.addEventListener('DOMContentLoaded', () => {
     //= ../components/burger.js
     //= ../components/navigation.js
     //= ../components/accordeon.js
+    //= ../components/modal-autorization.js
 });
