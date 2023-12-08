@@ -6,6 +6,9 @@ const modalAutorization = () => {
     modalOpenBtn.addEventListener('click', () => {
 
         modal.classList.add('_open');
+        modal.addEventListener('click', () => {
+            modalAdd.classList.remove('_open');
+        })
         modalClose.addEventListener('click', () => {
             modal.classList.remove('_open');
         })

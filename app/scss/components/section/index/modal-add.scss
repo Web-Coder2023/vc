@@ -1,0 +1,118 @@
+.modal-add {
+    &__window {
+        padding: 26px 21px 30px 21px;
+        border-radius: 15px;
+        background: #FFF;
+        max-width: 1060px;
+        width: 95%;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__select {
+        position: relative;
+        ._select-add {
+            border-bottom: 1px solid black;
+            width: 100%;
+            height: 20px;
+        }
+        &-box {
+            padding-top: 5px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+            cursor: pointer;
+        }
+        &-box._active {
+            display: flex;
+        }
+    }
+
+    &__item {
+        border-radius: 5px;
+        background: #fff;
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+    &__arround {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #15E329;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            width: 100%;
+            height: 15px;
+            border-bottom: 1px solid black;
+        }
+    }
+
+    &__title {
+        color: #000;
+        font-size: clamp(20px, 5vw, 32px);
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    &__close {
+        padding: 10px;
+    }
+
+    &__textarea {
+        margin-top: 31px;
+
+        textarea {
+            margin-top: 22px;
+            border-radius: 15px;
+            border: 1px solid #7A6E6E;
+            background: rgba(217, 217, 217, 0.00);
+            height: 306px;
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 2px solid #D9D9D9;
+        background: #0CA6FD;
+        padding: 13px 43px;
+
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 800;
+    }
+}

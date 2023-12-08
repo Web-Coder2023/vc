@@ -49,7 +49,7 @@ function styles() {
             suffix: ".min",
             extname: ".css"
         }))
-        .pipe(scss({outputStyle: 'compressed'}))
+        .pipe(scss({outputStyle: 'expanded'}))
         .pipe(dest('app/css'))
         .pipe(browserSync.stream())
 }

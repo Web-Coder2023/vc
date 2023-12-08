@@ -44,7 +44,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="_label-btn">+ <span>Добавить</span></button>
+                    <button class="_label-btn header__add">+ <span>Добавить</span></button>
                 </div>
                 <div class="header__autorization _label-btn">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1605,7 +1605,10 @@
                     <div class="modal">
                         <div class="modal__window">
                             <div class="modal__close">
-                                <span></span>
+                                <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2.82837" y="1" width="43" height="4" rx="2" transform="rotate(45 2.82837 1)" fill="black" />
+                                    <rect y="30.4056" width="43" height="4" rx="2" transform="rotate(-45 0 30.4056)" fill="black" />
+                                </svg>
                             </div>
                             <h3 class="modal__title">Что вы хотите сделать?</h3>
                             <div class="modal__tabs">
@@ -1623,6 +1626,44 @@
                                 <div class="modal__form-box"><input type="password" placeholder="Ваш пароль"></div>
                                 <button type="submit" class="_label-btn">Войти</button>
                             </form>
+                        </div>
+                    </div>
+                    <div class="modal modal-add">
+                        <div class="modal-add__window">
+                            <div class="modal-add__header">
+                                <div class="modal-add__profile">
+                                    <div class="modal-add__arround"><img src="./images/U.svg" alt=""></div>
+                                    <div class="modal-add__inner">
+                                        <span>User name</span>
+                                        <div class="modal-add__select">
+                                            <div class="_select-add"></div>
+                                            <div class="modal-add__select-box">
+                                                <div class="modal-add__item _select">Тег 1</div>
+                                                <div class="modal-add__item">Тег 2</div>
+                                                <div class="modal-add__item">Тег 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-add__box">
+                                    <h5 class="modal-add__title">Заголовок</h5>
+                                    <input type="text">
+                                </div>
+                                <button class="modal-add__close">
+                                    <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.82837" y="1" width="43" height="4" rx="2" transform="rotate(45 2.82837 1)"
+                                            fill="black" />
+                                        <rect y="30.4056" width="43" height="4" rx="2" transform="rotate(-45 0 30.4056)" fill="black" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="modal-add__textarea">
+                                <h6 class="modal-add__title">Ваша новость</h6>
+                                <textarea name="new" id="new">
+                    
+                                </textarea>
+                            </div>
+                            <button type="submit" class="modal-add__btn">Сохранить</button>
                         </div>
                     </div>
                 </div>
