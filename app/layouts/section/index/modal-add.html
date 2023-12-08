@@ -1,20 +1,6 @@
 <div class="modal modal-add">
     <div class="modal-add__window">
         <div class="modal-add__header">
-            <div class="modal-add__profile">
-                <div class="modal-add__arround"><img src="./images/U.svg" alt=""></div>
-                <div class="modal-add__inner">
-                    <span>User name</span>
-                    <div class="modal-add__select">
-                        <div class="_select-add"></div>
-                        <div class="modal-add__select-box">
-                            <div class="modal-add__item _select">Тег 1</div>
-                            <div class="modal-add__item">Тег 2</div>
-                            <div class="modal-add__item">Тег 3</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="modal-add__box">
                 <h5 class="modal-add__title">Заголовок</h5>
                 <input type="text">
@@ -27,11 +13,23 @@
                 </svg>
             </button>
         </div>
+        <div class="modal-add__wrapper">
+            <select name="select" id="select" class="modal-add__select">
+                <option value="" class="modal-add__select-item">Выберите запись</option>
+                <option value="" class="modal-add__select-item">Спорт</option>
+                <option value="" class="modal-add__select-item">Смешное</option>
+                <option value="" class="modal-add__select-item">Взрослое</option>
+            </select>
+        </div>
         <div class="modal-add__textarea">
             <h6 class="modal-add__title">Ваша новость</h6>
             <textarea name="new" id="new">
 
             </textarea>
+        </div>
+
+        <div class="modal-add__tags">
+            <input type="text" placeholder="#теги">
         </div>
         <button type="submit" class="modal-add__btn">Сохранить</button>
     </div>

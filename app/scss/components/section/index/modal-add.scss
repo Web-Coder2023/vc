@@ -13,61 +13,6 @@
         align-items: center;
     }
 
-    &__profile {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-    }
-
-    &__inner {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    &__select {
-        position: relative;
-        ._select-add {
-            border-bottom: 1px solid black;
-            width: 100%;
-            height: 20px;
-        }
-        &-box {
-            padding-top: 5px;
-            background-color: #fff;
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            display: none;
-            cursor: pointer;
-        }
-        &-box._active {
-            display: flex;
-        }
-    }
-
-    &__item {
-        border-radius: 5px;
-        background: #fff;
-        border: 1px solid black;
-        text-align: center;
-        padding: 5px 10px;
-    }
-
-    &__arround {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #15E329;
-    }
-
     &__box {
         display: flex;
         flex-direction: column;
@@ -100,7 +45,49 @@
             border: 1px solid #7A6E6E;
             background: rgba(217, 217, 217, 0.00);
             height: 306px;
+            resize: none;
             width: 100%;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    &__select {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 15px;
+            border: 1px solid #7A6E6E;
+        min-height: 30px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        font-size: 18px;
+        font-weight: 500;
+
+        &-item {
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+    &__tags {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+
+        input {
+            width: 100%;
+            border-radius: 15px;
+            border: 1px solid #7A6E6E;
+            padding-left: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 18px;
+            font-weight: 500;
         }
     }
 

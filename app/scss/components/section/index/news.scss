@@ -1,17 +1,17 @@
-.news {
+.general {
     overflow-y: scroll; /* Добавить вертикальную полосу прокрутки */
     height: calc(100vh - 60px);
     width: 100%;
 }
 
 /* Для WebKit (Chrome, Safari) */
-.news::-webkit-scrollbar {
+.general::-webkit-scrollbar {
     width: 0 !important; /* Ширина полосы прокрутки равна 0 */
     background: transparent; /* Прозрачный фон */
 }
 
 /* Для Firefox */
-.news {
+.general {
     scrollbar-width: none; /* Скрыть полосу прокрутки в Firefox */
     transition: all 0.2s ease-in-out;
 }
