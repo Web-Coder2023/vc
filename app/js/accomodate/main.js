@@ -8,4 +8,5 @@ document.addEventListener('DOMContentLoaded', () => {
     //= ../components/modal-add.js
     //= ../components/instruction.js
     //= ../components/dowloadPost.js
+    //= ../components/popup.js
 });

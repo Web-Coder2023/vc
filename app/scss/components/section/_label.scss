@@ -30,6 +30,10 @@
             }
 
         }
+
+        &__img {
+            margin: 25px 0;
+        }
         
         &__instruction._open{
             svg {
@@ -163,6 +167,7 @@
 
         &__comment {
             display: flex;
+            cursor: pointer;
             align-items: center;
         }
 

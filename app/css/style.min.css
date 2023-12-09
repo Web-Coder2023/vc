@@ -394,6 +394,9 @@ h6 {
 ._label-list__instruction-text {
   padding-bottom: 21px;
 }
+._label-list__img {
+  margin: 25px 0;
+}
 ._label-list__instruction._open svg {
   transform: rotate(-180deg);
 }
@@ -498,6 +501,7 @@ h6 {
 }
 ._label-list__comment {
   display: flex;
+  cursor: pointer;
   align-items: center;
 }
 ._label-list__btn {
@@ -960,6 +964,103 @@ h6 {
   color: #FFF;
   font-size: 14px;
   font-weight: 800;
+}
+
+.popup {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup-comment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6352941176);
+  overflow: hidden;
+  z-index: 100;
+  overflow-y: scroll;
+  padding-top: 20px;
+}
+.popup-comment__window {
+  max-width: 792px;
+  border-radius: 10px;
+  background: #FFF;
+  padding: 20px;
+  margin: 0 auto;
+}
+.popup-comment__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Для WebKit (Chrome, Safari) */
+.popup-comment::-webkit-scrollbar {
+  width: 0 !important; /* Ширина полосы прокрутки равна 0 */
+  background: transparent; /* Прозрачный фон */
+}
+
+/* Для Firefox */
+.popup-comment {
+  scrollbar-width: none; /* Скрыть полосу прокрутки в Firefox */
+  transition: all 0.2s ease-in-out;
+}
+
+.comment__mt {
+  margin-top: 25px;
+}
+.comment__count {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.comment__input {
+  font-size: 20px;
+  margin: 20px 0;
+  width: 100%;
+}
+.comment__input textarea {
+  resize: none;
+  border: 1px solid #D9D9D9;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.comment__list {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.comment__list-item {
+  border: 1px solid #D9D9D9;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+}
+.comment__list-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.comment__list-profile_avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+.comment__list-profile_info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.comment__list-text {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .advertisement {

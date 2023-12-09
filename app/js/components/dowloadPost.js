@@ -2,20 +2,20 @@ const dowloadPost = () => {
     let a = 0
     while (a < 10) {
         // Получаем все элементы с классом _label-list__card
-    const cards = document.querySelectorAll('._label-list__card');
+        const cards = document.querySelectorAll('._label-list__card');
 
-    // Используем цикл для перебора элементов и добавления 10 новых элементов после каждых 10 существующих элементов
-    for (let i = 0; i < cards.length; i += 10) {
-        const newCardsContainer = document.createElement('ul');
-        newCardsContainer.className = 'news';
+        // Используем цикл для перебора элементов и добавления 10 новых элементов после каждых 10 существующих элементов
+        for (let i = 0; i < cards.length; i += 10) {
+            const newCardsContainer = document.createElement('ul');
+            newCardsContainer.className = 'news';
 
-        // Создаем 10 новых элементов и добавляем ваш HTML код в каждый из них
-        for (let j = 0; j < 10; j++) {
-            const newCard = document.createElement('li');
-            newCard.className = '_label-list__card';
+            // Создаем 10 новых элементов и добавляем ваш HTML код в каждый из них
+            for (let j = 0; j < 10; j++) {
+                const newCard = document.createElement('li');
+                newCard.className = '_label-list__card';
 
-            // Вставляем ваш код в новый элемент
-            newCard.innerHTML = `
+                // Вставляем ваш код в новый элемент
+                newCard.innerHTML = `
             <div class="_label-list__tags">
                 <span>#Тег</span><span>#Тег2 </span><span>#Тег3</span>
             </div>
@@ -73,14 +73,41 @@ const dowloadPost = () => {
             </div>
     `;
 
-            newCardsContainer.appendChild(newCard);
+                newCardsContainer.appendChild(newCard);
+            }
+
+            // Вставляем новые элементы после текущего элемента
+            cards[i].after(newCardsContainer);
+
+            a++;
         }
-
-        // Вставляем новые элементы после текущего элемента
-        cards[i].after(newCardsContainer);
-
-        a++;
     }
-    }
+
+// Находим все карточки с классом '_label-list__card'
+const cards = document.querySelectorAll('._label-list__card');
+
+// Итерируем по каждой карточке
+cards.forEach(card => {
+    // Находим элементы внутри карточки
+    const nextButton = card.querySelector('._label-list__next');
+    const text = card.querySelector('._label-list__text');
+    const textBody = card.querySelector('._label-list__text-body');
+
+    // Добавляем обработчик клика на кнопку
+    nextButton.addEventListener('click', () => {
+        // Сбрасываем высоту текста для всех карточек
+        cards.forEach(otherCard => {
+            const otherText = otherCard.querySelector('._label-list__text');
+            const otherNextButton = otherCard.querySelector('._label-list__next');
+            otherText.style.maxHeight = '';
+            otherNextButton.style.display = 'block';
+        });
+
+        // Устанавливаем высоту текста равной высоте текстового блока
+        text.style.maxHeight = textBody.offsetHeight + 'px';
+        nextButton.style.display = 'none';
+    });
+});
+
 }
 dowloadPost();
